@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER FDRE
+	OPTION supported_peripherals = (FDRE);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = FDRE;
+END DRIVER

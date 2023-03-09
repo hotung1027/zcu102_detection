@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1678320950">
+  <File Type="PA-TCL" Name="mpsoc_preset_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="mpsoc_preset_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mpsoc_preset_wrapper.vds"/>
+  <File Type="RDS-DCP" Name="mpsoc_preset_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mpsoc_preset/mpsoc_preset.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/mpsoc_preset_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/mpsoc_preset/hdl/mpsoc_preset_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1678314439"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mpsoc_preset_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_Performance_retiming" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design">
+      <Option Id="Assert">1</Option>
+      <Option Id="MaxClockBufferCount">32</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="GatedClockConversion">2</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="ReTiming">1</Option>
+      <Option Id="Directive">7</Option>
+      <Option Id="IncrementalMode">0</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_axi_bram_ctrl_0_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_rst_ps8_0_99M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_mft_overlap_add_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_FDRE_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_fifo_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_PL_IO_TriggerCtrl_v1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_PL_SPI_ADC_MasterStr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_axis_subset_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_PL_VICFAR_AXIS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_ds_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_ds_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_ds_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mpsoc_preset_auto_ds_3"/>
+</GenRun>
